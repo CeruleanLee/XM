@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+
+    <ImageView
+        android:id="@+id/tagImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/viewPager"
+        android:layout_margin="10dp"
+        android:src="@drawable/ico_area_100"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/indicatorContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_below="@id/viewPager"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/goodsTitleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/indicatorContainer"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#BB303030" 
+        android:lineSpacingExtra="3dp"/>
+
+    <FrameLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/goodsTitleTv">
+
+        <include layout="@layout/v_period_head_status_0" />
+
+        <include layout="@layout/v_period_head_status_1" />
+        <include layout="@layout/v_period_head_status_2" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#11303030"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="想要这样的好运气？快来参与夺宝吧!"
+            android:textColor="#66000000"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/layout2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#11303030"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:id="@+id/imgTextDetailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/view1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selector_home_btn_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="图文详情"
+            android:textColor="#AA000000"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/arrowImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_more" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@id/arrowImg"
+            android:text="建议在wifi下查看"
+            android:textColor="#77000000"
+            android:textSize="12sp" />
+         <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#22444444"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/winRecordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/imgTextDetailLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:background="@drawable/selector_home_btn_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="往期揭晓"
+            android:textColor="#AA000000"
+            android:textSize="16sp" />
+		
+        <ImageView
+            android:id="@+id/arrowImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_more" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/winRecordLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#11303030"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/view2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="所有参与记录"
+            android:textColor="#AA000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/startTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv1"
+            android:textColor="#77000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_status_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    android:visibility="gone" 
+    android:background="#88EEE0E5">
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_revealed_onName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true" 
+                android:textColor="#8B8B83"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_revealed_onLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#8B8B83"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_revealed_onId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#8B8B83"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_open_qihao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#8B8B83"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_revealed_onCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#8B8B83"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_revealed_onTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#8B8B83"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+	<View 
+	    android:id="@+id/line"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/win_dotted_line"
+	    android:layout_below="@id/layout_top"
+	    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:background="@drawable/ic_red_bg"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/bt_revealed_calaDet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_calculate_detail_bg"
+            android:clickable="true"
+            android:paddingBottom="4dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="4dp"
+            android:text="计算详情"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        <TextView 
+            android:id="@+id/detail_lkTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="幸运号码："
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            />
+        <TextView 
+            android:id="@+id/tv_revealed_luckcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="幸运号码"
+            android:layout_toRightOf="@id/detail_lkTitle"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+	<ImageView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/ic_winner"
+	    android:layout_alignParentRight="true"
+	    android:layout_margin="5dp"
+	    />
+	<ImageView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/ic_winner_mark"
+	    android:layout_margin="5dp"
+	    />
+</RelativeLayout>

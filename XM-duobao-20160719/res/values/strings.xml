@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XM夺宝</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="duobao">夺宝</string>
+    <string name="last_win">最新揭晓</string>
+    <string name="rank_list">排行榜</string>
+    <string name="list">清单</string>
+    <string name="mine">我的</string>
+    <string name="goos_total_text">共%1$d件商品</string>
+    <string name="goods_total_times_text">总需%1$d人次</string>
+    <string name="goods_period">期号：%1$s</string>
+    <string name="period_start_date">(自%1$s开始)</string>
+    <string name="period_infor_evealed">期号：%1$s ( 揭晓时间：%2$s )</string>
+    <string name="luck_nickname">获得者： %1$s</string>
+    <string name="luck_uid">用户ID：%1$d (唯一不变标识)</string>
+    <string name="luck_code">幸运号码：%1$d</string>
+    <string name="luck_times">本期参与：%1$d人次</string>
+    <string name="show">展开↓</string>
+    <string name="hide">收起↑</string>
+    <string name="goods_count">共%1$d件商品，总计: </string>
+    <string name="coin_total">%1$d夺宝币</string>
+</resources>

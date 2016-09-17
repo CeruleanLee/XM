@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" 
+    >
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/backBtn"
+            android:text="最新揭晓"
+            android:layout_centerInParent="true"
+            android:textColor="#444444"
+            android:textSize="17sp" />
+		<ImageView 
+		    android:id="@+id/img_refresh"
+		    android:layout_width="@dimen/base_title_height"
+		    android:layout_height="@dimen/base_title_height"
+		    android:layout_centerVertical="true"
+		    android:src="@drawable/ic_refresh_gray"
+		    android:scaleType="centerInside"
+		    android:layout_alignParentRight="true"
+		    android:visibility="gone"
+		    />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#44000000" />
+    </RelativeLayout>
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <com.bwf.xmduobao.ui.view.LoadmoreGridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="#ffffff"
+        android:numColumns="2"/>
+        <include 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/v_loadingview"
+            />
+    </FrameLayout>
+	
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:id="@+id/layout_logined" >
+
+    <ImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+	<TextView 
+	    android:id="@+id/tv_nickname"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    />
+	<TextView 
+	    android:id="@+id/tv_uid"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    />
+	<TextView
+	    android:id="@+id/tv_loginCancel"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="注销"
+	    android:background="@drawable/selector_join_now_bg"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:gravity="center"
+	    android:textColor="#ffffff"
+	    />
+</LinearLayout>

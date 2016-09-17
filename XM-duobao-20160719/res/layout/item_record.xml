@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#66EBEBEB">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/app_icon_100_6" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_user"
+            android:layout_marginLeft="10dp" 
+            android:textSize="12sp"
+            android:textColor="#436EEE"/>
+
+        <TextView
+            android:id="@+id/tv_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_nickname"
+            android:layout_toRightOf="@id/tv_nickname" 
+            android:textSize="12sp"
+            android:textColor="#77000000"/>
+
+        <TextView
+            android:id="@+id/tv_joininfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_nickname"
+            android:layout_below="@id/tv_ip" 
+            android:textColor="#AA000000"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_jointime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_joininfo"
+            android:textSize="12sp"
+            
+            android:textColor="#77000000"
+            android:layout_toRightOf="@id/tv_joininfo"
+            android:layout_marginLeft="5dp" />
+    </RelativeLayout>
+
+</LinearLayout>

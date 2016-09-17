@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+		
+        <LinearLayout
+            android:id="@+id/bottomLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:gravity="center"
+            android:padding="10dp" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="新一期正在火热进行中..."
+                android:singleLine="true"
+                android:textColor="#AA444444"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/bt_goNow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                 android:layout_weight="5"
+                android:background="@drawable/selector_join_now_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="立即前往"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" 
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/bt_joinNow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_join_now_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="立即夺宝"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bt_addGood2Cart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_add_to_list2"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="加入清单"
+                android:textColor="#ff0000"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#44000000"
+            />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomLayout"
+        android:divider="@null" >
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" >
+
+        <ImageButton
+            android:id="@+id/backImg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/shape_circle_button_bg"
+            android:src="@drawable/ic_back_white" />
+
+        <ImageButton
+            android:id="@+id/shareImg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_circle_button_bg"
+            android:src="@drawable/ic_gooddetail_share_white" />
+
+        <ImageButton
+            android:id="@+id/cartImg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/shareImg"
+            android:background="@drawable/shape_circle_button_bg"
+            android:src="@drawable/ic_cart_black_white" />
+    </RelativeLayout>
+
+</RelativeLayout>

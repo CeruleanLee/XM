@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_griditem_bg"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/goodsImg"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goodsImg"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="3dp"
+        android:maxLines="2"
+        android:minLines="2"
+        android:text="萌萌要中金碗"
+        android:textColor="#3D3D3D"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle" >
+
+        <LinearLayout
+            android:id="@+id/layout_revealed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_revealed_onPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#8B8B83"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_revealed_onName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#8B8B83"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_revealed_onJoinTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#8B8B83"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_revealed_onLuckCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#8B8B83"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_revealed_onTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#8B8B83"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_revealing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_revealed_onPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#8B8B83"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@drawable/ic_revealing2"
+                android:drawablePadding="5dp"
+                android:text="即将揭晓"
+                android:textColor="#ff2233"
+                android:textSize="14sp" />
+
+            <com.bwf.xmduobao.ui.view.CutdownTextView
+                android:id="@+id/tv_countdownTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:10:37"
+                android:textColor="#ff2233"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tagImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_win_history_item_bg"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+	
+    <TextView
+        android:id="@+id/tv_period_info_ing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5DEB3"
+        android:padding="10dp"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_win"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_win_history_item_bg_2"
+        android:orientation="vertical"
+        android:duplicateParentState="true" >
+
+        <TextView
+            android:id="@+id/tv_period_info_revealed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#22444444"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_revealed_onName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#8B8B83"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_revealed_onLocalAndIp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:textColor="#AA008B00"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_revealed_onUid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:textColor="#8B8B83"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_luckcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:textColor="#8B8B83"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_luckTimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:textColor="#8B8B83"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
